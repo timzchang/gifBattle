@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { BattleComponent } from './battle/battle.component';
 import { CreateComponent } from './create/create.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    SharedModule
   ],
   declarations: [BattleComponent, CreateComponent, LeaderboardComponent]
 })
